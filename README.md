@@ -1,27 +1,134 @@
-# PruebaAtom
+# 🚀 pfrontend-atom
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Aplicación frontend desarrollada con **Angular**, creada con **Angular CLI**, pensada como base para proyectos web modernos.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Descripción
 
-## Code scaffolding
+**pfrontend-atom** es un proyecto frontend construido con Angular que proporciona una estructura inicial limpia y escalable. Está preparado para integrarse con servicios backend, autenticación y despliegue en Firebase Hosting.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠 Tecnologías utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- Angular CLI v18.2.21
+- TypeScript
+- Node.js
+- HTML5
+- SCSS
+- Firebase Hosting
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📂 Estructura del proyecto
 
-## Running end-to-end tests
+- public/
+- src/
+  - app/
+  - assets/
+  - environments/
+  - index.html
+  - main.ts
+- .gitignore
+- angular.json
+- firebase.json
+- package.json
+- tsconfig.json
+- tsconfig.app.json
+- tsconfig.spec.json
+- README.md
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## ⚙️ Requisitos previos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Node.js (versión LTS recomendada)
+- npm o yarn
+- Angular CLI
+
+Para instalar Angular CLI:
+
+    npm install -g @angular/cli
+
+---
+
+## 📥 Instalación
+
+Clona el repositorio e instala las dependencias:
+
+    git clone https://github.com/briangaleano/pfrontend-atom.git
+    cd pfrontend-atom
+    npm install
+
+---
+
+## ▶️ Ejecución en desarrollo
+
+Inicia el servidor de desarrollo:
+
+    ng serve
+
+Luego abre en el navegador:
+
+    http://localhost:4200
+
+---
+
+## 🧪 Pruebas unitarias
+
+Ejecuta las pruebas:
+
+    ng test
+
+---
+
+## 🏗️ Build para producción
+
+Genera los archivos de producción:
+
+    ng build
+
+Los archivos se generan en la carpeta `dist/`.
+
+---
+
+## 🧩 Generación de código
+
+Ejemplos con Angular CLI:
+
+    ng generate component nombre-componente
+    ng generate service nombre-servicio
+    ng generate guard nombre-guard
+
+---
+
+## 🚀 Despliegue en Firebase
+
+El proyecto incluye configuración para Firebase Hosting.
+
+Pasos básicos:
+
+    firebase login
+    firebase init
+    firebase deploy
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas mediante Pull Requests.
+
+---
+
+## 📄 Licencia
+
+Licencia no especificada.
+
+---
+
+## 👤 Autor
+
+Brian Galeano  
+GitHub: https://github.com/briangaleano
