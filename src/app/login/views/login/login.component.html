@@ -1,0 +1,14 @@
+<div class="center">
+  <mat-card>
+    <mat-card-title>Login</mat-card-title>
+
+    <mat-form-field appearance="outline" class="full">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" [(ngModel)]="email" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="login()">
+      Login
+    </button>
+  </mat-card>
+</div>

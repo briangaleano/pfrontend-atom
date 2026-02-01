@@ -1,0 +1,30 @@
+.container {
+  padding: 16px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.full {
+  width: 100%;
+}
+
+.tasks-container {
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+mat-chip {
+  font-size: 12px;
+}
