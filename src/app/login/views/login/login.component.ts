@@ -39,6 +39,7 @@ export class LoginComponent {
   }
 
   login() {
+    
     this.auth.login(this.form.value['email']).then((res) => {
       this.auth.setToken(res)
       this.snackBar.open('Login Correcto', 'Cerrar', {
