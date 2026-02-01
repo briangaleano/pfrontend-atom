@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,8 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
     MatInputModule,
     MatButtonModule,
     MatSnackBarModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule,
+  CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -23,12 +25,12 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 export class LoginComponent {
 
   form!: FormGroup;
-  fb: any;
 
   constructor(
     private auth: AuthService,
     private router: Router,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+     private fb: FormBuilder,
   ) {
 
     this.form = this.fb.group({

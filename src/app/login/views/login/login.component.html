@@ -8,11 +8,11 @@
 
         <input matInput type="email" formControlName="email" />
 
-        <mat-error *ngIf="form.controls.email.hasError('required')">
+        <mat-error *ngIf="form.controls['email'].hasError('required')">
           El correo es requerido
         </mat-error>
 
-        <mat-error *ngIf="form.controls.email.hasError('email')">
+        <mat-error *ngIf="form.controls['email'].hasError('email')">
           Correo con formato invalido.
         </mat-error>
       </mat-form-field>
