@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://app.com',
+  apiUrl: 'https://api-gl2fydetlq-uc.a.run.app',
   firebase: { 
     apiKey: 'AIzaSyXXXX',
     authDomain: 'tu-proyecto.firebaseapp.com',
