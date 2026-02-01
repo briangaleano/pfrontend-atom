@@ -31,3 +31,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
           projectId: prueba-atom-bg
+          channelId: live
