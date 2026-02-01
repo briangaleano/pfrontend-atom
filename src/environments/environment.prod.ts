@@ -1,12 +1,12 @@
 export const environment = {
   production: true,
   apiUrl: 'https://api-gl2fydetlq-uc.a.run.app',
-  firebase: { 
-    apiKey: 'AIzaSyXXXX',
-    authDomain: 'tu-proyecto.firebaseapp.com',
-    projectId: 'tu-proyecto',
-    storageBucket: 'tu-proyecto.appspot.com',
-    messagingSenderId: 'XXXX',
-    appId: '1:XXXX:web:XXXX'
-   }
+   firebase: {
+    apiKey: '__FIREBASE_API_KEY__',
+    authDomain: '__FIREBASE_AUTH_DOMAIN__',
+    projectId: '__FIREBASE_PROJECT_ID__',
+    storageBucket: '__FIREBASE_STORAGE_BUCKET__',
+    messagingSenderId: '__FIREBASE_MESSAGING_SENDER_ID__',
+    appId: '__FIREBASE_APP_ID__',
+  }
 };
