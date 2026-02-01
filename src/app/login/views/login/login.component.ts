@@ -1,6 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
@@ -14,23 +14,30 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
     MatCardModule,
     MatInputModule,
     MatButtonModule,
-    MatSnackBarModule],
+    MatSnackBarModule,
+    ReactiveFormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LoginComponent {
 
-  email = '';
+  form!: FormGroup;
+  fb: any;
 
   constructor(
     private auth: AuthService,
     private router: Router,
     private snackBar: MatSnackBar
-  ) {}
+  ) {
+
+    this.form = this.fb.group({
+      email: ['', [Validators.required, Validators.email]]
+    });
+  }
 
   login() {
-    this.auth.login(this.email).then((res) => {
+    this.auth.login(this.form.value['email']).then((res) => {
       this.auth.setToken(res)
       this.snackBar.open('Login Correcto', 'Cerrar', {
         duration: 3000
@@ -46,5 +53,8 @@ export class LoginComponent {
 
 
     
+  }
+  email(email: any) {
+    throw new Error('Method not implemented.');
   }
 }
